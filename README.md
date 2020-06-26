@@ -44,7 +44,7 @@ for var in os.environ:
 * Run the command `source ~/JhubGitPush/env.sh`
 * Configure ssh key (present in ~/.ssh/id_rsa.pub or specified location) in the github account
 <!-- * Run jupyter notebook from within your repo directory (eg. gitjupyter here) -->
-* Run jupyterhub using the jupyterhub_config.py file that you have updated using the command
+* Run jupyterhub using the jupyterhub_config.py file that you have updated using the command <br />
 `jupyterhub -f /<path to jupyterhub_config.py>/jupyterhub_config.py`
 
 
