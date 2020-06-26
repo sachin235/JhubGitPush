@@ -31,7 +31,7 @@ define(['base/js/namespace','base/js/dialog','jquery'],function(IPython, dialog,
                              'msg': input.val(),
                            };
                 var settings = {
-                    url : '/git/commit',
+                    url : base_url + '/git/commit',
                     processData : false,
                     type : "PUT",
                     dataType: "json",
