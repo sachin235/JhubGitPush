@@ -20,8 +20,12 @@ define(['base/js/namespace','base/js/dialog','jquery'],function(IPython, dialog,
             var container = $('#notebook-container');
 
             function on_ok(){
-                var re = /^\/notebooks(.*?)$/;
-                var filepath = window.location.pathname.match(re)[1];
+                // var re = /^\/notebooks(.*?)$/;
+                // var filepath = window.location.pathname.match(re)[1];
+                var filepath = window.location.pathname.split('notebooks')[1];
+                var base_url = window.location.pathname.split('notebooks')[0];
+
+                
                 var payload = {
                              'filename': filepath,
                              'msg': input.val(),
