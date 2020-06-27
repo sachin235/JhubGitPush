@@ -6,6 +6,7 @@ the user can push notebook to pre-specified git repository. There are few
 environment variables that must be exported. 
 Feel free to use the extension and open issue if you face any problems, or wish to add some utility to the extension.
 
+
 ## Installation
 
 You can currently install this directly from git. 
@@ -14,15 +15,13 @@ Use the following commands to install the extension.
 ```
 pip install git+https://github.com/sachin235/JhubGitPush.git
 jupyter serverextension enable --py JhubGitPush
-jupyter nbextension install --py JhubGitPush --user
-
+jupyter nbextension install --py JhubGitPush --user 
 ```
 
 To enable this extension for all notebooks:
 
 ```
 jupyter nbextension enable JhubGitPush --user --py 
-
 ```
 
 Add the following code to jupyterhub_config.py to export the environment variables
@@ -46,7 +45,6 @@ for var in os.environ:
 <!-- * Run jupyter notebook from within your repo directory (eg. gitjupyter here) -->
 * Run jupyterhub using the jupyterhub_config.py file that you have updated using the command <br />
 `jupyterhub -f /<path to jupyterhub_config.py>/jupyterhub_config.py`
-
 
 
 ## Example git configuration
